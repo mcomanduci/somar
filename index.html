@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clínica Somar</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="input.css" />
+  </head>
+  <body class="">
+    <header
+      class="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center absolute top-0 left-0 right-0 z-10"
+    >
+      <figure>
+        <img
+          src="src/img/logos/logo-horizontal.png"
+          alt="Clínica Somar"
+          loading="lazy"
+          class="max-h-[48px] md:max-h-[68px]"
+        />
+      </figure>
+      <nav class="hidden md:block">
+        <ul class="flex justify-center items-center space-x-8 flex-wrap">
+          <!-- <li><a href="#">Início</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Clínica</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li> -->
+          <a
+            type="button"
+            class="inline-block rounded bg-[#50AEA4] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-[#F5F5F5] shadow-primary-3 transition duration-150 ease-in-out hover:bg-[#175959] hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none cursor-pointer"
+          >
+            Agende Sua Consulta
+          </a>
+          <!-- <a
+            href="#"
+            class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-[#0463FA] text-white border border-[#0463FA] rounded-lg hover:bg-[#2275FC] focus:ring-4 focus:ring-gray-100"
+          >
+            Contato
+          </a> -->
+        </ul>
+      </nav>
+    </header>
+    <main class="">
+      <div class="hero-bg relative py-20 px-4 md:px-0 md:py-0 min-h-full md:h-screen">
+        <div
+          class="absolute bottom-0 left-0 w-full overflow-hidden line-height-0 z-20"
+        >
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+            class="relative block w-[calc(100%+1.3px)] h-[50px] md:h-[100px] 2xl:h-[180px]"
+          >
+            <path
+              d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z"
+              class="shape-fill fill-[#F8F9FA]"
+            ></path>
+          </svg>
+        </div>
+
+        <section
+          class="container h-full mx-auto md:px-2 grid md:grid-cols-12 items-center hero"
+        >
+          <!-- <div
+            class="absolute bottom-0 left-0 w-full overflow-hidden line-height-0"
+          >
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              class="relative block w-[calc(100%+1.3px)] h-[50px] md:h-[100px] 2xl:h-[200px]"
+            >
+              <path
+                d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z"
+                class="shape-fill fill-[#F8F9FA]"
+              ></path>
+            </svg>
+          </div> -->
+          <div class="pt-10 md:ml-10 space-y-8 col-span-7 modern2">
+            <h1
+              class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+            >
+              <span class="text-[#2FC4B2]">Cuidados médicos</span> de qualidade
+              para sua saúde e bem-estar
+            </h1>
+            <p
+              class="max-w-2xl mb-6 text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+            >
+              A Clínica Somar é uma clínica médica que atua em diversas áreas da
+              medicina, com profissionais especializados e prontos para atender
+              você.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded focus:ring-4 focus:ring-gray-100"
+            >
+              Agende Sua Consulta
+            </a>
+          </div>
+
+          <!-- <figure
+            class="w-full h-full flex items-end justify-center col-span-5"
+          >
+            <img
+              src="src/img/hero1.png"
+              alt="Clínica Somar"
+              class="max-h-full"
+            />
+          </figure> -->
+        </section>
+      </div>
+      <div class="h-[500px] bg-[#80D0C7 bagi">
+        <section class="container mx-auto px-4 py-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="col-span-1">
+              <h2 class="text-2xl font-bold text-[#0463FA]">Sobre a Clínica</h2>
+              <p class="text-gray-500">
+                A Clínica Somar é uma clínica médica que atua em diversas áreas
+                da medicina, com profissionais especializados e prontos para
+                atender você.
+              </p>
+            </div>
+            <div class="col-span-1">
+              <h2 class="text-2xl font-bold text-[#0463FA]">Nossos Serviços</h2>
+              <p class="text-gray-500">
+                A Clínica Somar oferece uma ampla gama de especialidades médicas
+                para garantir sua saúde e qualidade de vida.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="h-[50px]"></div>
+
+      <div class="hero-bg relative py-20 px-4 md:px-0 md:py-0 md:h-screen">
+        <section
+          class="container h-full mx-auto md:px-2 grid md:grid-cols-12 items-center"
+        >
+          <div
+            class="absolute bottom-0 left-0 w-full overflow-hidden line-height-0"
+          >
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+              class="relative block w-[calc(100%+1.3px)] h-[50px] md:h-[100px] 2xl:h-[200px]"
+            >
+              <path
+                d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z"
+                class="shape-fill fill-[#F3F9FE]"
+              ></path>
+            </svg>
+          </div>
+          <div class="pt-10 md:ml-10 space-y-8 col-span-7 elegant2">
+            <h1
+              class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+            >
+              <span class="text-[#396CF0]">Cuidados Médicos</span> de Qualidade para Sua Saúde e Bem-Estar
+            </h1>
+            <p
+              class="max-w-2xl mb-6 text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+            >
+              A Clínica Somar é uma clínica médica que atua em diversas áreas da
+              medicina, com profissionais especializados e prontos para atender
+              você.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded focus:ring-4 focus:ring-gray-100 blue"
+            >
+              Agende Sua Consulta
+            </a>
+          </div>
+
+          <!-- <figure
+            class="w-full h-full flex items-end justify-center col-span-5"
+          >
+            <img
+              src="src/img/hero1.png"
+              alt="Clínica Somar"
+              class="max-h-full"
+            />
+          </figure> -->
+        </section>
+      </div>
+      <div class="h-[500px] bg-[#F3F9FE]"></div>
+
+      <!-- <section class="relative">
+        <div
+          class="grid container px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
+        >
+          <div class="mr-auto place-self-center lg:col-span-7">
+            <h1
+              class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+            >
+              Cuidados Médicos de Qualidade para Sua Saúde e Bem-Estar
+            </h1>
+            <p
+              class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+            >
+              Oferecemos uma ampla gama de especialidades médicas, com
+              atendimento personalizado e humanizado, para garantir sua saúde e
+              qualidade de vida.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center bg-[#0463FA] text-white border border-[#0463FA] rounded-lg hover:bg-[#2275FC] focus:ring-4 focus:ring-gray-100"
+            >
+              Agende Sua Consulta
+            </a>
+          </div>
+          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+            <img
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
+              alt="mockup"
+            />
+          </div>
+        </div>
+      </section> -->
+
+      <div class="bg-white">
+        <section class="h-[2000px] container mx-auto px-4 py-4"></section>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+h1 {
+  font-family: "Poppins";
+  font-family: "Work Sans";
+  font-family: "Montserrat";
+  font-family: "Playfair Display";
+  font-weight: 700;
+  color: #012050;
+}
+
+.modern {
+  & h1 {
+    font-family: "Montserrat";
+    color: #102039;
+  }
+  & p {
+    font-family: "Lato";
+    color: #2a3d4f;
+  }
+  & a {
+    background-color: #396cf0;
+  }
+}
+
+.modern2 {
+  & h1 {
+    font-family: "Poppins";
+    color: #2a3b44;
+  }
+  & p {
+    font-family: "Roboto";
+    color: #3e4a54;
+  }
+  & a {
+    background-color: #2fc4b2;
+  }
+}
+
+.elegant {
+  & h1 {
+    font-family: "Playfair Display";
+    color: #2a3b44;
+  }
+  & p {
+    font-family: "Lora";
+    color: #3e4a54;
+  }
+  & a {
+    background-color: #2fc4b2;
+  }
+}
+
+.elegant2 {
+  & h1 {
+    font-family: "Playfair Display";
+    color: #102039;
+  }
+  & p {
+    font-family: "Lora";
+    color: #2a3d4f;
+  }
+  & a {
+    background-color: #396cf0;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "nunito", sans-serif;
+  font-family: "open sans", sans-serif;
+  font-family: "Lora";
+}
+
+.hero-bg {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url("/src/img/slider1.jpg");
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),
+    url("/src/img/image.png");
+  /* background-image: url("/src/img/slider1.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.bagi {
+  background: linear-gradient(180deg, #f8f9fa, #e9ecef);
+  background: linear-gradient(180deg, #f8f9fa, #d6e4ff);
+  background: linear-gradient(360deg, #80d0c7, #f8f9fa);
+  background: #b3e1dd;
+  background: #f9f9f9;
+}
+
+span {
+  text-shadow: 1px 1px 4px rgba(42, 59, 68, 0.3);
+}
+
+a.rounded {
+  box-shadow: 0 4px 6px rgba(42, 59, 68, 0.1);
+  background: linear-gradient(135deg, #2fc4b2, #47d9c5, #1da18f);
+  background-size: 200%;
+  transition: all 0.4s ease;
+}
+
+a.rounded:hover {
+  background-position: right center;
+  box-shadow: 0 6px 10px rgba(42, 59, 68, 0.1);
+}
+
+a.blue {
+  background: linear-gradient(135deg, #396cf0, #5a85f5, #1e4acc);
+  background-size: 200%;
+}
+a.blue:hover {
+  background-position: center right;
+}

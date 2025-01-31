@@ -8,36 +8,25 @@
 
   --color-primary: #006d77;
   --color-secondary: #042e3a;
+  --color-tertiary: #073846;
   --color-text: #4f4f4f;
+  --color-subtitle: #999;
+  --color-subtitle: #727272;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-}
-
-h1 {
-  font-family: "Poppins";
-  font-weight: 700;
-  color: var(--color-secondary);
-}
-
-h1 span {
-  color: var(--color-primary);
-}
-
-h2 {
-  color: var(--color-primary) !important;
-}
-
-p {
-  color: var(--color-text) !important;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero-bg {
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
     url("/src/img/slider1.jpg");
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.2)
+    ),
     url("/src/img/image.png");
   /* background-image: url("/src/img/slider1.jpg"); */
   background-size: cover;
@@ -48,18 +37,6 @@ p {
   width: 100%;
   overflow: hidden;
 }
-
-.bagi {
-  background: linear-gradient(180deg, #f8f9fa, #e9ecef);
-  background: linear-gradient(180deg, #f8f9fa, #d6e4ff);
-  background: linear-gradient(360deg, #80d0c7, #f8f9fa);
-  background: #b3e1dd;
-  background: #f9f9f9;
-}
-
-/* span {
-  text-shadow: 1px 1px 4px rgba(42, 59, 68, 0.3);
-} */
 
 a.rounded-lg,
 a.rounded {
@@ -74,7 +51,49 @@ a.rounded {
   transition: all 0.4s ease;
 }
 
-a.rounded-lg:hover, a.rounded:hover {
+a.rounded-lg:hover,
+a.rounded:hover {
   background-position: right center;
   box-shadow: 0 6px 10px rgba(42, 59, 68, 0.1);
+}
+
+.teste {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 109, 119, 0.8),
+    rgba(0, 109, 119, 1)
+  );
+}
+
+article.bg-white {
+  perspective: 1000px;
+  background-color: transparent !important;
+}
+
+article.bg-white .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+article.bg-white.change .inner {
+  transform: rotateY(180deg);
+}
+
+article.bg-white .back,
+article.bg-white .front {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+article.bg-white .back {
+  color: white;
+  transform: rotateY(180deg);
 }

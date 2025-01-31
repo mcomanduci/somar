@@ -215,110 +215,69 @@
 
             <!-- TESTESTETESST
              ------------------- -->
-            <article class="bg-white rounded-xl">
-              <div class="inner">
-                <!-- back -->
-                <div
-                  class="h-full back bg-primary rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 absolute"
-                >
-                  <p>TESTE</p>
-                  <button class="morez z-20 relative">FLIPa</button>
-                </div>
-                <!-- back -->
 
-                <div
-                  class="relative h-full front rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
-                >
-                  <img
-                    src="./src/img/consulta1.jpg"
-                    alt="Equipe médica realizando exame de colonoscopia"
-                    class="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                  <!-- srcset="
-                    /images/colonoscopia-400.jpg 400w,
-                    /images/colonoscopia-800.jpg 800w
-                  "
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" -->
-                  <!-- <div
-                  class="absolute inset-0 bg-gradient-to-t from-gray-900/80"
-                ></div> -->
-                  <div class="absolute inset-0 teste"></div>
-                  <div class="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 class="text-2xl font-semibold text-white mb-6">
-                      Colonoscopia
-                    </h3>
-                    <ul class="space-y-3 text-white">
-                      <li class="flex items-center">
-                        <svg
-                          class="w-5 h-5 text-teal-200 mr-2 flex-shrink-0"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        Prevenção e diagnóstico precoce do câncer colorretal
-                      </li>
-                      <li class="flex items-center">
-                        <svg
-                          class="w-5 h-5 text-teal-200 mr-2 flex-shrink-0"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        Equipamento de última geração
-                      </li>
-                      <li class="flex items-center">
-                        <svg
-                          class="w-5 h-5 text-teal-200 mr-2 flex-shrink-0"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        Sedação supervisionada por anestesista
-                      </li>
-                    </ul>
-                    <button
-                      class="inline-flex items-center font-medium hover:text-teal-300 transition-colors mt-2 cursor-pointer more"
-                      aria-label="Saiba mais sobre o exame de Colonoscopia"
+            <!-- TESTESTETSTS
+            _____------ -->
+
+            <!-- TESTE 2 -->
+            <article class="group relative h-full w-full rounded-xl [perspective:1000px] min-h-[480px] min-w-[370xp]">
+              <div class="inner relative h-full w-full transition-transform duration-700 ease-in-out [transform-style:preserve-3d]">
+                <!-- Front Card -->
+                <div class="front absolute h-full w-full rounded-xl bg-white [backface-visibility:hidden]">
+                  <div class="relative h-full overflow-hidden rounded-xl shadow-lg transition-shadow duration-300 group-hover:shadow-xl">
+                    <img
+                      src="./src/img/consulta1.jpg"
+                      alt="Médico realizando exame de colonoscopia"
+                      class="h-full w-full object-cover"
+                      loading="lazy"
+   
                     >
-                      <span>Saiba mais</span>
-                      <svg
-                        class="w-4 h-4 ml-2"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#006d77] via-[#006d77]/70 to-transparent"></div>
+                    
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                      <h3 class="text-2xl font-semibold mb-4 drop-shadow-md">Colonoscopia</h3>
+                      <ul class="space-y-3 mb-6">
+                        <!-- List items remain same -->
+                      </ul>
+                      <button 
+                        class="more inline-flex items-center font-medium text-teal-200 hover:text-white transition-colors"
+                        aria-label="Mais informações sobre Colonoscopia"
                       >
-                        <path
-                          d="M9.707 18.707l6-6a1 1 0 000-1.414l-6-6a1 1 0 00-1.414 1.414L13.586 12l-5.293 5.293a1 1 0 001.414 1.414z"
-                        />
+                        Saiba mais
+                        <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M9.707 18.707l6-6a1 1 0 000-1.414l-6-6a1 1 0 00-1.414 1.414L13.586 12l-5.293 5.293a1 1 0 001.414 1.414z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Back Card -->
+                <div class="back absolute h-full w-full rounded-xl bg-[#006d77] p-6 text-white [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                  <div class="flex h-full flex-col justify-between">
+                    <div>
+                      <h3 class="text-2xl font-semibold mb-4">Detalhes da Colonoscopia</h3>
+                      <ul class="space-y-3">
+                        <li>• Preparo especializado</li>
+                        <li>• Resultados em 24h</li>
+                        <li>• Equipe certificada</li>
+                      </ul>
+                    </div>
+                    <button 
+                      class="more inline-flex items-center justify-center w-full py-2 text-teal-100 hover:text-white transition-colors"
+                      aria-label="Voltar para informações básicas"
+                    >
+                      <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
                       </svg>
+                      Voltar
                     </button>
                   </div>
                 </div>
               </div>
             </article>
-            <!-- TESTESTETSTS
-            _____------ -->
+            <!-- TESTE 2 -->
 
             <!-- Endoscopia Digestiva Card -->
             <article

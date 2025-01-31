@@ -67,7 +67,7 @@ a.rounded:hover {
   );
 }
 
-article.bg-white {
+/* article.bg-white {
   perspective: 1000px;
   background-color: transparent !important;
 }
@@ -96,4 +96,4 @@ article.bg-white .front {
 article.bg-white .back {
   color: white;
   transform: rotateY(180deg);
-}
+} */

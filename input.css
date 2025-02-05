@@ -66,34 +66,3 @@ a.rounded:hover {
     rgba(0, 109, 119, 1)
   );
 }
-
-/* article.bg-white {
-  perspective: 1000px;
-  background-color: transparent !important;
-}
-
-article.bg-white .inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-article.bg-white.change .inner {
-  transform: rotateY(180deg);
-}
-
-article.bg-white .back,
-article.bg-white .front {
-  /* position: absolute; */
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-article.bg-white .back {
-  color: white;
-  transform: rotateY(180deg);
-} */

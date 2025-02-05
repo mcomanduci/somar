@@ -92,7 +92,7 @@
         </div>
 
         <!-- Wave Divider -->
-        <div
+        <!-- <div
           class="absolute bottom-0 left-0 w-full transform translate-y-1 rotate-180"
         >
           <svg viewBox="0 0 1200 60" class="w-full h-auto">
@@ -101,12 +101,28 @@
               d="M0 0v22.5c200 31.5 550 33.5 750 0 200-33.5 450-30 450 37.5V0H0z"
             />
           </svg>
+        </div> -->
+        <div
+          class="absolute bottom-0 left-0 w-full transform translate-y-1 rotate-180"
+        >
+          <svg viewBox="0 0 1200 60" class="w-full h-auto">
+            <defs>
+              <linearGradient id="gradient90">
+                <stop offset="0%" stop-color="#DAE9EB" />
+                <stop offset="100%" stop-color="#C8DEE1" />
+              </linearGradient>
+            </defs>
+            <path
+              fill="url(#gradient90)"
+              d="M0 0v22.5c200 31.5 550 33.5 750 0 200-33.5 450-30 450 37.5V0H0z"
+            />
+          </svg>
         </div>
       </section>
       <!-- HERO SECTION -->
 
       <!-- VIDEO SECTION -->
-      <section class="py-16 bg-[#F8F9FA]">
+      <section class="py-16 bg-linear-90 from-[#C8DEE1] to-[#DAE9EB]">
         <div class="max-w-5xl mx-auto px-4">
           <!-- Section Header with Improved Hierarchy -->
           <header class="text-center mb-12 space-y-6">
@@ -185,10 +201,7 @@
       <!-- END VIDEO SECTION -->
 
       <!-- SERVICES SECTION 2 -->
-      <section
-        class="py-16 bg-linear-120 from-primary/20 to-primary/10"
-        aria-labelledby="services-heading"
-      >
+      <section class="py-16 bg-[#F8F9FA]" aria-labelledby="services-heading">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <!-- Section Header -->
           <header class="text-center mb-16 space-y-6">
@@ -211,65 +224,136 @@
 
           <!-- Service Cards Grid -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Colonoscopia Card -->
-
-            <!-- TESTESTETESST
-             ------------------- -->
-
-            <!-- TESTESTETSTS
-            _____------ -->
-
-            <!-- TESTE 2 -->
-            <article class="group relative h-full w-full rounded-xl [perspective:1000px] min-h-[480px] min-w-[370xp]">
-              <div class="inner relative h-full w-full transition-transform duration-700 ease-in-out [transform-style:preserve-3d]">
+            <!-- Card 1 -->
+            <article
+              class="group relative h-full w-full rounded-xl [perspective:1000px] min-h-[480px] min-w-[370xp]"
+            >
+              <div
+                class="inner relative h-full w-full transition-transform duration-700 ease-in-out [transform-style:preserve-3d]"
+              >
                 <!-- Front Card -->
-                <div class="front absolute h-full w-full rounded-xl bg-white [backface-visibility:hidden]">
-                  <div class="relative h-full overflow-hidden rounded-xl shadow-lg transition-shadow duration-300 group-hover:shadow-xl">
+                <div
+                  class="front absolute h-full w-full rounded-xl bg-white [backface-visibility:hidden]"
+                >
+                  <div
+                    class="relative h-full overflow-hidden rounded-xl shadow-lg transition-shadow duration-300 group-hover:shadow-xl"
+                  >
                     <img
-                      src="./src/img/consulta1.jpg"
+                      src="./src/img/consulta11.jpg"
                       alt="Médico realizando exame de colonoscopia"
                       class="h-full w-full object-cover"
                       loading="lazy"
-   
+                    />
+
+                    <!-- <div
+                      class="absolute inset-0 bg-gradient-to-t from-[#006d77] via-[#006d77]/70 to-transparent"
+                    ></div> -->
+                    <div class="absolute inset-0 teste"></div>
+
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-6 text-white flex flex-col"
                     >
-                    
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#006d77] via-[#006d77]/70 to-transparent"></div>
-                    
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                      <h3 class="text-2xl font-semibold mb-4 drop-shadow-md">Colonoscopia</h3>
+                      <h3 class="text-2xl font-semibold mb-4 drop-shadow-md">
+                        Colonoscopia
+                      </h3>
                       <ul class="space-y-3 mb-6">
-                        <!-- List items remain same -->
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Prevenção e diagnóstico precoce do câncer colorretal
+                        </li>
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Equipamento de última geração
+                        </li>
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Sedação supervisionada por anestesista
+                        </li>
                       </ul>
-                      <button 
-                        class="more inline-flex items-center font-medium text-teal-200 hover:text-white transition-colors"
+                      <button
+                        class="more inline-flex items-center font-medium text-teal-200 hover:text-white transition-colors self-center"
                         aria-label="Mais informações sobre Colonoscopia"
                       >
                         Saiba mais
-                        <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M9.707 18.707l6-6a1 1 0 000-1.414l-6-6a1 1 0 00-1.414 1.414L13.586 12l-5.293 5.293a1 1 0 001.414 1.414z"/>
+                        <svg
+                          class="w-4 h-4 ml-2"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M9.707 18.707l6-6a1 1 0 000-1.414l-6-6a1 1 0 00-1.414 1.414L13.586 12l-5.293 5.293a1 1 0 001.414 1.414z"
+                          />
                         </svg>
                       </button>
                     </div>
                   </div>
                 </div>
-            
+
                 <!-- Back Card -->
-                <div class="back absolute h-full w-full rounded-xl bg-[#006d77] p-6 text-white [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                <div
+                  class="back absolute h-full w-full rounded-xl bg-[#006d77] p-8 text-white [backface-visibility:hidden] [transform:rotateY(180deg)]"
+                >
                   <div class="flex h-full flex-col justify-between">
-                    <div>
-                      <h3 class="text-2xl font-semibold mb-4">Detalhes da Colonoscopia</h3>
-                      <ul class="space-y-3">
-                        <li>• Preparo especializado</li>
-                        <li>• Resultados em 24h</li>
-                        <li>• Equipe certificada</li>
-                      </ul>
-                    </div>
-                    <button 
-                      class="more inline-flex items-center justify-center w-full py-2 text-teal-100 hover:text-white transition-colors"
+                    <h3 class="text-2xl font-semibold text-center">
+                      Sobre a Colonoscopia
+                    </h3>
+                    <p class="text-md text-[#ddd] px-4">
+                      A colonoscopia é um exame médico que permite a
+                      visualização do interior do cólon e do reto por meio de um
+                      tubo flexível com uma câmera na ponta. É utilizada para
+                      diagnosticar e prevenir doenças como pólipos, inflamações
+                      e câncer colorretal. O procedimento é realizado com
+                      sedação para maior conforto do paciente.
+                    </p>
+
+                    <button
+                      class="more inline-flex items-center justify-center w-full text-teal-200 hover:text-white transition-colors"
                       aria-label="Voltar para informações básicas"
                     >
-                      <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                      <svg
+                        class="w-4 h-4 mr-2 rotate-180"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M9.707 18.707l6-6a1 1 0 000-1.414l-6-6a1 1 0 00-1.414 1.414L13.586 12l-5.293 5.293a1 1 0 001.414 1.414z"
+                        />
                       </svg>
                       Voltar
                     </button>
@@ -277,443 +361,702 @@
                 </div>
               </div>
             </article>
-            <!-- TESTE 2 -->
+            <!-- Card 1 FIM -->
 
-            <!-- Endoscopia Digestiva Card -->
+            <!-- Card 2 -->
             <article
-              class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+              class="group relative h-full w-full rounded-xl [perspective:1000px] min-h-[480px] min-w-[370xp]"
             >
-              <div class="relative aspect-video">
-                <img
-                  src="/images/endoscopia.jpg"
-                  alt="Equipamento moderno de endoscopia digestiva"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                  srcset="
-                    /images/endoscopia-400.jpg 400w,
-                    /images/endoscopia-800.jpg 800w
-                  "
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
+              <div
+                class="inner relative h-full w-full transition-transform duration-700 ease-in-out [transform-style:preserve-3d]"
+              >
+                <!-- Front Card -->
                 <div
-                  class="absolute inset-0 bg-gradient-to-t from-gray-900/40"
-                ></div>
-                <h3
-                  class="absolute bottom-0 left-0 right-0 text-2xl font-semibold text-white p-6"
+                  class="front absolute h-full w-full rounded-xl bg-white [backface-visibility:hidden]"
                 >
-                  Endoscopia Digestiva
-                </h3>
-              </div>
+                  <div
+                    class="relative h-full overflow-hidden rounded-xl shadow-lg transition-shadow duration-300 group-hover:shadow-xl"
+                  >
+                    <img
+                      src="./src/img/consulta21.jpg"
+                      alt="Médico realizando exame de colonoscopia"
+                      class="h-full w-full object-cover"
+                      loading="lazy"
+                    />
 
-              <div class="p-6">
-                <ul class="space-y-3 text-gray-600">
-                  <li class="flex items-center">
-                    <svg
-                      class="w-5 h-5 text-teal-600 mr-2 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+                    <!-- <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#006d77] via-[#006d77]/70 to-transparent"
+                  ></div> -->
+                    <div class="absolute inset-0 teste"></div>
+
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-6 text-white flex flex-col"
                     >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Avaliação completa do trato digestivo superior
-                  </li>
-                  <li class="flex items-center">
-                    <svg
-                      class="w-5 h-5 text-teal-600 mr-2 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Detecção de úlceras e lesões
-                  </li>
-                  <li class="flex items-center">
-                    <svg
-                      class="w-5 h-5 text-teal-600 mr-2 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Procedimento rápido e indolor
-                  </li>
-                </ul>
-              </div>
-              <div class="border-t border-gray-100 px-6 py-4 bg-gray-50">
-                <a
-                  href="#endoscopia"
-                  class="text-teal-600 hover:text-teal-700 font-medium"
+                      <h3 class="text-2xl font-semibold mb-4 drop-shadow-md">
+                        Endoscopia Digestiva
+                      </h3>
+                      <ul class="space-y-3 mb-6">
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Avaliação completa do trato digestivo superior
+                        </li>
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Detecção de úlceras e lesões
+                        </li>
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Procedimento rápido e indolor
+                        </li>
+                      </ul>
+                      <button
+                        class="more inline-flex items-center font-medium text-teal-200 hover:text-white transition-colors self-center"
+                        aria-label="Mais informações sobre Colonoscopia"
+                      >
+                        Saiba mais
+                        <svg
+                          class="w-4 h-4 ml-2"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M9.707 18.707l6-6a1 1 0 000-1.414l-6-6a1 1 0 00-1.414 1.414L13.586 12l-5.293 5.293a1 1 0 001.414 1.414z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Back Card -->
+                <div
+                  class="back absolute h-full w-full rounded-xl bg-[#006d77] p-8 text-white [backface-visibility:hidden] [transform:rotateY(180deg)]"
                 >
-                  Saiba mais sobre o exame →
-                </a>
+                  <div class="flex h-full flex-col justify-between">
+                    <h3 class="text-2xl font-semibold text-center">
+                      Sobre a Endoscopia
+                    </h3>
+                    <p class="text-md text-[#ddd] px-4">
+                      A colonoscopia é um exame médico que permite a
+                      visualização do interior do cólon e do reto por meio de um
+                      tubo flexível com uma câmera na ponta. É utilizada para
+                      diagnosticar e prevenir doenças como pólipos, inflamações
+                      e câncer colorretal. O procedimento é realizado com
+                      sedação para maior conforto do paciente.
+                    </p>
+
+                    <button
+                      class="more inline-flex items-center justify-center w-full text-teal-200 hover:text-white transition-colors"
+                      aria-label="Voltar para informações básicas"
+                    >
+                      <svg
+                        class="w-4 h-4 mr-2 rotate-180"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M9.707 18.707l6-6a1 1 0 000-1.414l-6-6a1 1 0 00-1.414 1.414L13.586 12l-5.293 5.293a1 1 0 001.414 1.414z"
+                        />
+                      </svg>
+                      Voltar
+                    </button>
+                  </div>
+                </div>
               </div>
             </article>
-            <article
-              class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
-            >
-              <div class="relative aspect-video">
-                <img
-                  src="/images/colonoscopia.jpg"
-                  alt="Equipe médica realizando exame de colonoscopia"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                  srcset="
-                    /images/colonoscopia-400.jpg 400w,
-                    /images/colonoscopia-800.jpg 800w
-                  "
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-gray-900/40"
-                ></div>
-                <h3
-                  class="absolute bottom-0 left-0 right-0 text-2xl font-semibold text-white p-6"
-                >
-                  Colonoscopia
-                </h3>
-              </div>
+            <!-- Card 2 FIM -->
 
-              <div class="p-6">
-                <ul class="space-y-3 text-gray-600">
-                  <li class="flex items-center">
-                    <svg
-                      class="w-5 h-5 text-teal-600 mr-2 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Prevenção e diagnóstico precoce do câncer colorretal
-                  </li>
-                  <li class="flex items-center">
-                    <svg
-                      class="w-5 h-5 text-teal-600 mr-2 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Equipamento de última geração
-                  </li>
-                  <li class="flex items-center">
-                    <svg
-                      class="w-5 h-5 text-teal-600 mr-2 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Sedação supervisionada por anestesista
-                  </li>
-                </ul>
-              </div>
-              <div class="border-t border-gray-100 px-6 py-4 bg-gray-50">
-                <a
-                  href="#colonoscopia"
-                  class="text-teal-600 hover:text-teal-700 font-medium"
+            <!-- Card 3 -->
+            <article
+              class="group relative h-full w-full rounded-xl [perspective:1000px] min-h-[480px] min-w-[370xp]"
+            >
+              <div
+                class="inner relative h-full w-full transition-transform duration-700 ease-in-out [transform-style:preserve-3d]"
+              >
+                <!-- Front Card -->
+                <div
+                  class="front absolute h-full w-full rounded-xl bg-white [backface-visibility:hidden]"
                 >
-                  Saiba mais sobre o exame →
-                </a>
+                  <div
+                    class="relative h-full overflow-hidden rounded-xl shadow-lg transition-shadow duration-300 group-hover:shadow-xl"
+                  >
+                    <img
+                      src="./src/img/consulta31.jpg"
+                      alt="Médico realizando exame de colonoscopia"
+                      class="h-full w-full object-cover"
+                      loading="lazy"
+                    />
+
+                    <!-- <div
+                              class="absolute inset-0 bg-gradient-to-t from-[#006d77] via-[#006d77]/70 to-transparent"
+                            ></div> -->
+                    <div class="absolute inset-0 teste"></div>
+
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-6 text-white flex flex-col"
+                    >
+                      <h3 class="text-2xl font-semibold mb-4 drop-shadow-md">
+                        Endoscopia Digestiva
+                      </h3>
+                      <ul class="space-y-3 mb-6">
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Avaliação completa do trato digestivo superior
+                        </li>
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Detecção de úlceras e lesões
+                        </li>
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Procedimento rápido e indolor
+                        </li>
+                      </ul>
+                      <button
+                        class="more inline-flex items-center font-medium text-teal-200 hover:text-white transition-colors self-center"
+                        aria-label="Mais informações sobre Colonoscopia"
+                      >
+                        Saiba mais
+                        <svg
+                          class="w-4 h-4 ml-2"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M9.707 18.707l6-6a1 1 0 000-1.414l-6-6a1 1 0 00-1.414 1.414L13.586 12l-5.293 5.293a1 1 0 001.414 1.414z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Back Card -->
+                <div
+                  class="back absolute h-full w-full rounded-xl bg-[#006d77] p-8 text-white [backface-visibility:hidden] [transform:rotateY(180deg)]"
+                >
+                  <div class="flex h-full flex-col justify-between">
+                    <h3 class="text-2xl font-semibold text-center">
+                      Sobre a Endoscopia
+                    </h3>
+                    <p class="text-md text-[#ddd] px-4">
+                      A colonoscopia é um exame médico que permite a
+                      visualização do interior do cólon e do reto por meio de um
+                      tubo flexível com uma câmera na ponta. É utilizada para
+                      diagnosticar e prevenir doenças como pólipos, inflamações
+                      e câncer colorretal. O procedimento é realizado com
+                      sedação para maior conforto do paciente.
+                    </p>
+
+                    <button
+                      class="more inline-flex items-center justify-center w-full text-teal-200 hover:text-white transition-colors"
+                      aria-label="Voltar para informações básicas"
+                    >
+                      <svg
+                        class="w-4 h-4 mr-2 rotate-180"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M9.707 18.707l6-6a1 1 0 000-1.414l-6-6a1 1 0 00-1.414 1.414L13.586 12l-5.293 5.293a1 1 0 001.414 1.414z"
+                        />
+                      </svg>
+                      Voltar
+                    </button>
+                  </div>
+                </div>
               </div>
             </article>
+            <!-- Card 3 FIM -->
 
-            <!-- Endoscopia Digestiva Card -->
+            <!-- Card 4 -->
             <article
-              class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+              class="group relative h-full w-full rounded-xl [perspective:1000px] min-h-[480px] min-w-[370xp]"
             >
-              <div class="relative aspect-video">
-                <img
-                  src="/images/endoscopia.jpg"
-                  alt="Equipamento moderno de endoscopia digestiva"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                  srcset="
-                    /images/endoscopia-400.jpg 400w,
-                    /images/endoscopia-800.jpg 800w
-                  "
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
+              <div
+                class="inner relative h-full w-full transition-transform duration-700 ease-in-out [transform-style:preserve-3d]"
+              >
+                <!-- Front Card -->
                 <div
-                  class="absolute inset-0 bg-gradient-to-t from-gray-900/40"
-                ></div>
-                <h3
-                  class="absolute bottom-0 left-0 right-0 text-2xl font-semibold text-white p-6"
+                  class="front absolute h-full w-full rounded-xl bg-white [backface-visibility:hidden]"
                 >
-                  Endoscopia Digestiva
-                </h3>
-              </div>
+                  <div
+                    class="relative h-full overflow-hidden rounded-xl shadow-lg transition-shadow duration-300 group-hover:shadow-xl"
+                  >
+                    <img
+                      src="./src/img/consulta41.jpg"
+                      alt="Médico realizando exame de colonoscopia"
+                      class="h-full w-full object-cover"
+                      loading="lazy"
+                    />
 
-              <div class="p-6">
-                <ul class="space-y-3 text-gray-600">
-                  <li class="flex items-center">
-                    <svg
-                      class="w-5 h-5 text-teal-600 mr-2 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+                    <!-- <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#006d77] via-[#006d77]/70 to-transparent"
+                  ></div> -->
+                    <div class="absolute inset-0 teste"></div>
+
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-6 text-white flex flex-col"
                     >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Avaliação completa do trato digestivo superior
-                  </li>
-                  <li class="flex items-center">
-                    <svg
-                      class="w-5 h-5 text-teal-600 mr-2 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Detecção de úlceras e lesões
-                  </li>
-                  <li class="flex items-center">
-                    <svg
-                      class="w-5 h-5 text-teal-600 mr-2 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Procedimento rápido e indolor
-                  </li>
-                </ul>
-              </div>
-              <div class="border-t border-gray-100 px-6 py-4 bg-gray-50">
-                <a
-                  href="#endoscopia"
-                  class="text-teal-600 hover:text-teal-700 font-medium"
+                      <h3 class="text-2xl font-semibold mb-4 drop-shadow-md">
+                        Endoscopia Digestiva
+                      </h3>
+                      <ul class="space-y-3 mb-6">
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Avaliação completa do trato digestivo superior
+                        </li>
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Detecção de úlceras e lesões
+                        </li>
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Procedimento rápido e indolor
+                        </li>
+                      </ul>
+                      <button
+                        class="more inline-flex items-center font-medium text-teal-200 hover:text-white transition-colors self-center"
+                        aria-label="Mais informações sobre Colonoscopia"
+                      >
+                        Saiba mais
+                        <svg
+                          class="w-4 h-4 ml-2"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M9.707 18.707l6-6a1 1 0 000-1.414l-6-6a1 1 0 00-1.414 1.414L13.586 12l-5.293 5.293a1 1 0 001.414 1.414z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Back Card -->
+                <div
+                  class="back absolute h-full w-full rounded-xl bg-[#006d77] p-8 text-white [backface-visibility:hidden] [transform:rotateY(180deg)]"
                 >
-                  Saiba mais sobre o exame →
-                </a>
+                  <div class="flex h-full flex-col justify-between">
+                    <h3 class="text-2xl font-semibold text-center">
+                      Sobre a Endoscopia
+                    </h3>
+                    <p class="text-md text-[#ddd] px-4">
+                      A colonoscopia é um exame médico que permite a
+                      visualização do interior do cólon e do reto por meio de um
+                      tubo flexível com uma câmera na ponta. É utilizada para
+                      diagnosticar e prevenir doenças como pólipos, inflamações
+                      e câncer colorretal. O procedimento é realizado com
+                      sedação para maior conforto do paciente.
+                    </p>
+
+                    <button
+                      class="more inline-flex items-center justify-center w-full text-teal-200 hover:text-white transition-colors"
+                      aria-label="Voltar para informações básicas"
+                    >
+                      <svg
+                        class="w-4 h-4 mr-2 rotate-180"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M9.707 18.707l6-6a1 1 0 000-1.414l-6-6a1 1 0 00-1.414 1.414L13.586 12l-5.293 5.293a1 1 0 001.414 1.414z"
+                        />
+                      </svg>
+                      Voltar
+                    </button>
+                  </div>
+                </div>
               </div>
             </article>
-            <article
-              class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
-            >
-              <div class="relative aspect-video">
-                <img
-                  src="/images/colonoscopia.jpg"
-                  alt="Equipe médica realizando exame de colonoscopia"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                  srcset="
-                    /images/colonoscopia-400.jpg 400w,
-                    /images/colonoscopia-800.jpg 800w
-                  "
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-gray-900/40"
-                ></div>
-                <h3
-                  class="absolute bottom-0 left-0 right-0 text-2xl font-semibold text-white p-6"
-                >
-                  Colonoscopia
-                </h3>
-              </div>
+            <!-- Card 2 FIM -->
 
-              <div class="p-6">
-                <ul class="space-y-3 text-gray-600">
-                  <li class="flex items-center">
-                    <svg
-                      class="w-5 h-5 text-teal-600 mr-2 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Prevenção e diagnóstico precoce do câncer colorretal
-                  </li>
-                  <li class="flex items-center">
-                    <svg
-                      class="w-5 h-5 text-teal-600 mr-2 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Equipamento de última geração
-                  </li>
-                  <li class="flex items-center">
-                    <svg
-                      class="w-5 h-5 text-teal-600 mr-2 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Sedação supervisionada por anestesista
-                  </li>
-                </ul>
-              </div>
-              <div class="border-t border-gray-100 px-6 py-4 bg-gray-50">
-                <a
-                  href="#colonoscopia"
-                  class="text-teal-600 hover:text-teal-700 font-medium"
+            <!-- Card 5 -->
+            <article
+              class="group relative h-full w-full rounded-xl [perspective:1000px] min-h-[480px] min-w-[370xp]"
+            >
+              <div
+                class="inner relative h-full w-full transition-transform duration-700 ease-in-out [transform-style:preserve-3d]"
+              >
+                <!-- Front Card -->
+                <div
+                  class="front absolute h-full w-full rounded-xl bg-white [backface-visibility:hidden]"
                 >
-                  Saiba mais sobre o exame →
-                </a>
+                  <div
+                    class="relative h-full overflow-hidden rounded-xl shadow-lg transition-shadow duration-300 group-hover:shadow-xl"
+                  >
+                    <img
+                      src="./src/img/consulta51.jpg"
+                      alt="Médico realizando exame de colonoscopia"
+                      class="h-full w-full object-cover"
+                      loading="lazy"
+                    />
+
+                    <!-- <div
+                              class="absolute inset-0 bg-gradient-to-t from-[#006d77] via-[#006d77]/70 to-transparent"
+                            ></div> -->
+                    <div class="absolute inset-0 teste"></div>
+
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-6 text-white flex flex-col"
+                    >
+                      <h3 class="text-2xl font-semibold mb-4 drop-shadow-md">
+                        Endoscopia Digestiva
+                      </h3>
+                      <ul class="space-y-3 mb-6">
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Avaliação completa do trato digestivo superior
+                        </li>
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Detecção de úlceras e lesões
+                        </li>
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Procedimento rápido e indolor
+                        </li>
+                      </ul>
+                      <button
+                        class="more inline-flex items-center font-medium text-teal-200 hover:text-white transition-colors self-center"
+                        aria-label="Mais informações sobre Colonoscopia"
+                      >
+                        Saiba mais
+                        <svg
+                          class="w-4 h-4 ml-2"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M9.707 18.707l6-6a1 1 0 000-1.414l-6-6a1 1 0 00-1.414 1.414L13.586 12l-5.293 5.293a1 1 0 001.414 1.414z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Back Card -->
+                <div
+                  class="back absolute h-full w-full rounded-xl bg-[#006d77] p-8 text-white [backface-visibility:hidden] [transform:rotateY(180deg)]"
+                >
+                  <div class="flex h-full flex-col justify-between">
+                    <h3 class="text-2xl font-semibold text-center">
+                      Sobre a Endoscopia
+                    </h3>
+                    <p class="text-md text-[#ddd] px-4">
+                      A colonoscopia é um exame médico que permite a
+                      visualização do interior do cólon e do reto por meio de um
+                      tubo flexível com uma câmera na ponta. É utilizada para
+                      diagnosticar e prevenir doenças como pólipos, inflamações
+                      e câncer colorretal. O procedimento é realizado com
+                      sedação para maior conforto do paciente.
+                    </p>
+
+                    <button
+                      class="more inline-flex items-center justify-center w-full text-teal-200 hover:text-white transition-colors"
+                      aria-label="Voltar para informações básicas"
+                    >
+                      <svg
+                        class="w-4 h-4 mr-2 rotate-180"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M9.707 18.707l6-6a1 1 0 000-1.414l-6-6a1 1 0 00-1.414 1.414L13.586 12l-5.293 5.293a1 1 0 001.414 1.414z"
+                        />
+                      </svg>
+                      Voltar
+                    </button>
+                  </div>
+                </div>
               </div>
             </article>
+            <!-- Card 5 FIM -->
 
-            <!-- Endoscopia Digestiva Card -->
+            <!-- Card 6 -->
             <article
-              class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+              class="group relative h-full w-full rounded-xl [perspective:1000px] min-h-[480px] min-w-[370xp]"
             >
-              <div class="relative aspect-video">
-                <img
-                  src="/images/endoscopia.jpg"
-                  alt="Equipamento moderno de endoscopia digestiva"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                  srcset="
-                    /images/endoscopia-400.jpg 400w,
-                    /images/endoscopia-800.jpg 800w
-                  "
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
+              <div
+                class="inner relative h-full w-full transition-transform duration-700 ease-in-out [transform-style:preserve-3d]"
+              >
+                <!-- Front Card -->
                 <div
-                  class="absolute inset-0 bg-gradient-to-t from-gray-900/40"
-                ></div>
-                <h3
-                  class="absolute bottom-0 left-0 right-0 text-2xl font-semibold text-white p-6"
+                  class="front absolute h-full w-full rounded-xl bg-white [backface-visibility:hidden]"
                 >
-                  Endoscopia Digestiva
-                </h3>
-              </div>
+                  <div
+                    class="relative h-full overflow-hidden rounded-xl shadow-lg transition-shadow duration-300 group-hover:shadow-xl"
+                  >
+                    <img
+                      src="./src/img/consulta61.jpg"
+                      alt="Médico realizando exame de colonoscopia"
+                      class="h-full w-full object-cover"
+                      loading="lazy"
+                    />
 
-              <div class="p-6">
-                <ul class="space-y-3 text-gray-600">
-                  <li class="flex items-center">
-                    <svg
-                      class="w-5 h-5 text-teal-600 mr-2 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+                    <!-- <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#006d77] via-[#006d77]/70 to-transparent"
+                  ></div> -->
+                    <div class="absolute inset-0 teste"></div>
+
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-6 text-white flex flex-col"
                     >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Avaliação completa do trato digestivo superior
-                  </li>
-                  <li class="flex items-center">
-                    <svg
-                      class="w-5 h-5 text-teal-600 mr-2 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Detecção de úlceras e lesões
-                  </li>
-                  <li class="flex items-center">
-                    <svg
-                      class="w-5 h-5 text-teal-600 mr-2 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Procedimento rápido e indolor
-                  </li>
-                </ul>
-              </div>
-              <div class="border-t border-gray-100 px-6 py-4 bg-gray-50">
-                <a
-                  href="#endoscopia"
-                  class="text-teal-600 hover:text-teal-700 font-medium"
+                      <h3 class="text-2xl font-semibold mb-4 drop-shadow-md">
+                        Endoscopia Digestiva
+                      </h3>
+                      <ul class="space-y-3 mb-6">
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Avaliação completa do trato digestivo superior
+                        </li>
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Detecção de úlceras e lesões
+                        </li>
+                        <li class="flex items-center">
+                          <svg
+                            class="w-5 h-5 text-white mr-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          Procedimento rápido e indolor
+                        </li>
+                      </ul>
+                      <button
+                        class="more inline-flex items-center font-medium text-teal-200 hover:text-white transition-colors self-center"
+                        aria-label="Mais informações sobre Colonoscopia"
+                      >
+                        Saiba mais
+                        <svg
+                          class="w-4 h-4 ml-2"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M9.707 18.707l6-6a1 1 0 000-1.414l-6-6a1 1 0 00-1.414 1.414L13.586 12l-5.293 5.293a1 1 0 001.414 1.414z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Back Card -->
+                <div
+                  class="back absolute h-full w-full rounded-xl bg-[#006d77] p-8 text-white [backface-visibility:hidden] [transform:rotateY(180deg)]"
                 >
-                  Saiba mais sobre o exame →
-                </a>
+                  <div class="flex h-full flex-col justify-between">
+                    <h3 class="text-2xl font-semibold text-center">
+                      Sobre a Endoscopia
+                    </h3>
+                    <p class="text-md text-[#ddd] px-4">
+                      A colonoscopia é um exame médico que permite a
+                      visualização do interior do cólon e do reto por meio de um
+                      tubo flexível com uma câmera na ponta. É utilizada para
+                      diagnosticar e prevenir doenças como pólipos, inflamações
+                      e câncer colorretal. O procedimento é realizado com
+                      sedação para maior conforto do paciente.
+                    </p>
+
+                    <button
+                      class="more inline-flex items-center justify-center w-full text-teal-200 hover:text-white transition-colors"
+                      aria-label="Voltar para informações básicas"
+                    >
+                      <svg
+                        class="w-4 h-4 mr-2 rotate-180"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M9.707 18.707l6-6a1 1 0 000-1.414l-6-6a1 1 0 00-1.414 1.414L13.586 12l-5.293 5.293a1 1 0 001.414 1.414z"
+                        />
+                      </svg>
+                      Voltar
+                    </button>
+                  </div>
+                </div>
               </div>
             </article>
+            <!-- Card 2 FIM -->
           </div>
 
           <!-- CTA Section -->
@@ -748,6 +1091,55 @@
         </div>
       </section>
       <!-- END SERVICES SECTION 2 -->
+
+      <!-- ABOUT SECTION -->
+      <section class="bg-linear-90 from-[#C8DEE1] to-[#DAE9EB]">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            Experienced Care You Can Trust
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Our board-certified physicians bring decades of combined experience
+            to your care.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Doctor 1 -->
+          <div
+            class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow"
+          >
+            <img
+              src="dr-lee.jpg"
+              alt="Dr. Sarah Lee smiling in clinic"
+              class="w-full h-64 object-cover rounded-t-xl"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Dr. Sarah Lee, MD
+              </h3>
+              <p class="text-brandBlue font-semibold mb-3">
+                Pediatrics Specialist
+              </p>
+              <p class="text-gray-600 mb-4">
+                15+ years experience in child wellness and developmental care.
+              </p>
+              <ul class="text-sm text-gray-500 space-y-1">
+                <li>🏆 Best Pediatrician 2023 (City Magazine)</li>
+                <li>🗣️ Fluent in English & Spanish</li>
+              </ul>
+              <a
+                href="#book-dr-lee"
+                class="mt-4 inline-block bg-brandBlue text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+              >
+                Book with Dr. Lee →
+              </a>
+            </div>
+          </div>
+
+          <!-- Repeat for other doctors... -->
+        </div>
+      </section>
+      <!-- END ABOUT SECTION -->
 
       <div class="bg-white">
         <section class="h-[200px] container mx-auto px-4 py-4"></section>

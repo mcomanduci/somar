@@ -94,7 +94,7 @@ body {
       rgba(200, 222, 225, 0.4),
       rgba(218, 233, 235, 0.4)
     ),
-    url("./src/img/gplay.png");;
+    url("./src/img/gplay.png");
 }
 
 .bacq:after {
@@ -137,15 +137,15 @@ body {
 
 .hero-bg {
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
-    url("./src/img/slider1.jpg");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url("./src/img/slider1.jpg"); */
   background-image: linear-gradient(
       90deg,
       rgba(255, 255, 255, 0.5) 0%,
       rgba(0, 0, 0, 0.2) 50%,
       rgba(0, 0, 0, 0.4) 100%
     ),
-    url("./src/img/image.png");
+    url("./src/img/image.webp");
   /* background-image: url("/src/img/slider1.jpg"); */
   background-size: cover;
   background-position: center;

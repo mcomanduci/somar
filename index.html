@@ -90,39 +90,29 @@
             </div>
           </div>
         </div>
+        <div class="testes h-[150px] z-100 absolute bottom-0 left-0 right-0">sArs</div>
 
-        <!-- Wave Divider -->
         <!-- <div
-          class="absolute bottom-0 left-0 w-full transform translate-y-1 rotate-180"
-        >
-          <svg viewBox="0 0 1200 60" class="w-full h-auto">
-            <path
-              fill="#F8F9FA"
-              d="M0 0v22.5c200 31.5 550 33.5 750 0 200-33.5 450-30 450 37.5V0H0z"
-            />
-          </svg>
-        </div> -->
-        <div
-          class="absolute bottom-0 left-0 w-full transform translate-y-1 rotate-180"
-        >
-          <svg viewBox="0 0 1200 60" class="w-full h-auto">
-            <defs>
-              <linearGradient id="gradient90">
-                <stop offset="0%" stop-color="#DAE9EB" />
-                <stop offset="100%" stop-color="#C8DEE1" />
-              </linearGradient>
-            </defs>
-            <path
-              fill="url(#gradient90)"
-              d="M0 0v22.5c200 31.5 550 33.5 750 0 200-33.5 450-30 450 37.5V0H0z"
-            />
-          </svg>
-        </div>
+            class="absolute bottom-0 left-0 w-full transform translate-y-1 rotate-180"
+          >
+            <svg viewBox="0 0 1200 60" class="w-full h-auto">
+              <defs>
+                <linearGradient id="gradient90">
+                  <stop offset="0%" stop-color="#DAE9EB" />
+                  <stop offset="100%" stop-color="#C8DEE1" />
+                </linearGradient>
+              </defs>
+              <path
+                fill="url(#gradient90)"
+                d="M0 0v22.5c200 31.5 550 33.5 750 0 200-33.5 450-30 450 37.5V0H0z"
+              />
+            </svg>
+          </div> -->
       </section>
       <!-- HERO SECTION -->
 
       <!-- VIDEO SECTION -->
-      <section class="py-16 bg-linear-90 from-[#C8DEE1] to-[#DAE9EB]">
+      <section class="py-16 relative baqu">
         <div class="max-w-5xl mx-auto px-4">
           <!-- Section Header with Improved Hierarchy -->
           <header class="text-center mb-12 space-y-6">
@@ -201,7 +191,7 @@
       <!-- END VIDEO SECTION -->
 
       <!-- SERVICES SECTION 2 -->
-      <section class="py-16 bg-[#F8F9FA]" aria-labelledby="services-heading">
+      <section class="py-16 bacqa relative" aria-labelledby="services-heading">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <!-- Section Header -->
           <header class="text-center mb-16 space-y-6">
@@ -1092,54 +1082,113 @@
       </section>
       <!-- END SERVICES SECTION 2 -->
 
-      <!-- ABOUT SECTION -->
-      <section class="bg-linear-90 from-[#C8DEE1] to-[#DAE9EB]">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-800 mb-4">
-            Experienced Care You Can Trust
-          </h2>
-          <p class="text-gray-600 max-w-2xl mx-auto">
-            Our board-certified physicians bring decades of combined experience
-            to your care.
-          </p>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Doctor 1 -->
-          <div
-            class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow"
-          >
-            <img
-              src="dr-lee.jpg"
-              alt="Dr. Sarah Lee smiling in clinic"
-              class="w-full h-64 object-cover rounded-t-xl"
-            />
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-2">
-                Dr. Sarah Lee, MD
+      <!-- ABOUT SECTION 2 -->
+      <section
+        class="bg-linear-90 from-[#C8DEE1] to-[#DAE9EB]"
+        aria-labelledby="about-heading"
+      >
+        <div>
+          <!-- Doctor Section -->
+          <div class="md:flex items-start md:max-h-[600px]">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+              <img
+                src="./src/img/doc2.jpg"
+                alt="Dra. Jéssica Lemos em consultório médico"
+                class="w-full h-full max-h-[300px] md:max-h-[600px] object-cover object-top"
+                loading="lazy"
+              />
+            </div>
+
+            <div
+              class="md:w-1/2 py-4 flex flex-col justify-between h-full px-4"
+            >
+              <h3 class="text-2xl font-bold text-gray-800 mb-6">
+                Dra. Jéssica Lemos
               </h3>
-              <p class="text-brandBlue font-semibold mb-3">
-                Pediatrics Specialist
-              </p>
-              <p class="text-gray-600 mb-4">
-                15+ years experience in child wellness and developmental care.
-              </p>
-              <ul class="text-sm text-gray-500 space-y-1">
-                <li>🏆 Best Pediatrician 2023 (City Magazine)</li>
-                <li>🗣️ Fluent in English & Spanish</li>
+              <ul class="space-y-4 list-disc ml-6">
+                <li class="text-gray-800">
+                  <h4 class="font-semibold mb-2">
+                    Formada em Medicina pela UNIFESP
+                  </h4>
+                </li>
+                <li class="text-gray-800">
+                  <h4 class="font-semibold mb-2">
+                    Residência em Gastroenterologia no Hospital Albert Einstein
+                  </h4>
+                </li>
+                <li class="text-gray-800">
+                  <h4 class="font-semibold mb-2">
+                    Especialização em Endoscopia Avançada
+                  </h4>
+                </li>
+                <li class="text-gray-800">
+                  <h4 class="font-semibold mb-2">
+                    Membro da Federação Brasileira de Gastroenterologia
+                  </h4>
+                </li>
               </ul>
-              <a
-                href="#book-dr-lee"
-                class="mt-4 inline-block bg-brandBlue text-white px-4 py-2 rounded-lg hover:bg-blue-700"
-              >
-                Book with Dr. Lee →
-              </a>
+              <p class="mt-6 text-gray-800">
+                Com 12 anos de experiência, a Dra. Jéssica Lemos combina
+                expertise técnica com atendimento humanizado. Especialista em
+                prevenção e diagnóstico precoce de doenças digestivas, participa
+                regularmente de congressos internacionais para trazer as
+                melhores práticas médicas para seus pacientes.
+              </p>
             </div>
           </div>
 
-          <!-- Repeat for other doctors... -->
+          <!-- Clinic Section -->
+          <div class="bg-[#F8F9FA]">
+            <div class="md:flex flex-row-reverse items-start md:max-h-[600px]">
+              <div class="md:w-1/2 mb-8 md:mb-0">
+                <img
+                  src="./src/img/clinic.jpg"
+                  alt="Instalações modernas da Clínica Somar"
+                  class="w-full h-full max-h-[300px] md:max-h-[600px] object-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              <div
+                class="md:w-1/2 py-4 flex flex-col justify-between h-full px-4"
+              >
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">
+                  Clínica Somar
+                </h3>
+                <ul class="space-y-4 list-disc ml-6">
+                  <li class="text-gray-800">
+                    <h4 class="font-semibold mb-2">
+                      Equipamentos de última geração
+                    </h4>
+                  </li>
+                  <li class="text-gray-800">
+                    <h4 class="font-semibold mb-2">
+                      Salas de exame com privacidade garantida
+                    </h4>
+                  </li>
+                  <li class="text-gray-800">
+                    <h4 class="font-semibold mb-2">
+                      Ambiente climatizado e acessível
+                    </h4>
+                  </li>
+                  <li class="text-gray-800">
+                    <h4 class="font-semibold mb-2">
+                      Atendimento por plano de saúde e particular
+                    </h4>
+                  </li>
+                </ul>
+                <p class="mt-6 text-gray-800">
+                  Nossa clínica oferece infraestrutura moderna e confortável,
+                  com tecnologia de ponta para exames precisos e tratamentos
+                  eficazes. Priorizamos o conforto e segurança dos pacientes em
+                  todas as etapas do atendimento.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <!-- END ABOUT SECTION -->
+      <!-- ABOUT SECTION 2 END -->
 
       <div class="bg-white">
         <section class="h-[200px] container mx-auto px-4 py-4"></section>

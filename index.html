@@ -22,6 +22,8 @@
         --color-subtitle: #727272;
       }
     </style>
+    <link rel="preload" as="image" href="./src/img/logos/logo2.png" />
+    <link rel="preload" as="image" href="./src/img/image.png" />
   </head>
   <body class="">
     <!-- HEADER SECTION -->
@@ -34,6 +36,7 @@
           alt="Clínica Somar - Página inicial"
           loading="eager"
           class="h-12 md:h-16 w-auto transition-opacity hover:opacity-90"
+          fetchpriority="high"
         />
       </a>
 
@@ -90,7 +93,9 @@
             </div>
           </div>
         </div>
-        <div class="testes h-[150px] z-100 absolute bottom-0 left-0 right-0">sArs</div>
+        <div class="testes h-[150px] z-100 absolute bottom-0 left-0 right-0">
+          sArs
+        </div>
 
         <!-- <div
             class="absolute bottom-0 left-0 w-full transform translate-y-1 rotate-180"
@@ -1084,12 +1089,12 @@
 
       <!-- ABOUT SECTION 2 -->
       <section
-        class="bg-linear-90 from-[#C8DEE1] to-[#DAE9EB]"
+        class=""
         aria-labelledby="about-heading"
       >
         <div>
           <!-- Doctor Section -->
-          <div class="md:flex items-start md:max-h-[600px]">
+          <div class="md:flex items-start md:max-h-[600px] baqu">
             <div class="md:w-1/2 mb-8 md:mb-0">
               <img
                 src="./src/img/doc2.jpg"
@@ -1138,7 +1143,7 @@
           </div>
 
           <!-- Clinic Section -->
-          <div class="bg-[#F8F9FA]">
+          <div class="bacqa relative">
             <div class="md:flex flex-row-reverse items-start md:max-h-[600px]">
               <div class="md:w-1/2 mb-8 md:mb-0">
                 <img

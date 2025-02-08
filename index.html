@@ -128,10 +128,13 @@
           </header>
 
           <div
-            class="aspect-video bg-gray-100 rounded-xl overflow-hidden shadow-2xl relative group"
+            class="aspect-video bg-gray-100 rounded-xl shadow-2xl relative group"
           >
             <div
-              class="absolute inset-0 flex items-center justify-center bg-gray-200/50 backdrop-blur-sm transition-opacity duration-300"
+              class="absolute inset-0 bg-blue-400 scale-[101%] rounded-xl transform rotate-1"
+            ></div>
+            <div
+              class="absolute inset-0 flex items-center justify-center bg-gray-200/50 backdrop-blur-sm transition-opacity duration-300 rounded-xl"
             >
               <svg
                 class="w-16 h-16 text-gray-400 animate-pulse"
@@ -149,7 +152,7 @@
             </div>
 
             <iframe
-              class="absolute inset-0 w-full h-full"
+              class="absolute inset-0 w-full h-full rounded-xl"
               title="Tour Virtual - Clínica Somar"
               src="https://www.youtube.com/embed/cZiWEQ4gTKU?si=fnEKZPtLM1L9LkDT&mute=1"
               loading="lazy"
@@ -214,7 +217,7 @@
               >
                 <!-- Front Card -->
                 <div
-                  class="front absolute h-full w-full rounded-xl bg-white [backface-visibility:hidden]"
+                  class="front absolute h-full w-full rounded-xl bg-primary [backface-visibility:hidden] border-2 border-primary"
                 >
                   <div
                     class="relative h-full overflow-hidden rounded-xl shadow-lg transition-shadow duration-300 group-hover:shadow-2xl"
@@ -1640,6 +1643,128 @@
       </section>
 
       <!-- CTA SECTION 3 END -->
+      <div class="bg-white h-4"></div>
+      <!-- CTA SECTION 4 -->
+      <section
+        class="relative bg-[url('./src/img/outside.webp')] bg-cover bg-center bg-no-repeat py-16 lg:py-16 overflow-hidden"
+      >
+        <!-- Overlay com gradiente para melhor legibilidade -->
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-teal-900/90 to-teal-800/70"
+        ></div>
+
+        <div class="relative container mx-auto px-4 text-center">
+          <!-- Badge de desconto -->
+          <div
+            class="inline-flex items-center bg-gradient-to-r from-teal-500 to-teal-600 text-white px-6 py-2 rounded-full mb-6 shadow-lg"
+          >
+            <svg
+              class="w-5 h-5 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 7h2m0 0v2m0-2V4.5A2.5 2.5 0 109.5 7H11m2 0h-2m0 0V9m0-2v2.5A2.5 2.5 0 0013.5 14H15m-2 0h2m0 0v2m0-2v2.5a2.5 2.5 0 11-5 0V14H9m2 0h2"
+              />
+            </svg>
+            <span class="font-semibold uppercase">Desconto Exclusivo</span>
+          </div>
+
+          <!-- Título principal -->
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+            <span class="block text-teal-300">Sua Saúde Não Pode Esperar</span>
+            <span class="">1ª Consulta com 10% de Desconto</span>
+          </h2>
+
+          <!-- Subtítulo -->
+          <p
+            class="text-lg md:text-xl text-teal-100 max-w-2xl mx-auto mb-8 leading-relaxed"
+          >
+            Mencione essa oferta ao agendar a sua consulta e garanta o desconto
+            de 10% para a primeira consulta.
+          </p>
+
+          <!-- CTA Principal -->
+          <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+            <a
+              href="#book"
+              class="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-white/50 text-tertiary text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform white"
+            >
+              <svg
+                class="w-6 h-6 mr-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              Agendar com Desconto
+            </a>
+          </div>
+
+          <!-- Selos de Confiança -->
+          <div
+            class="flex flex-wrap justify-center gap-6 text-sm text-teal-100"
+          >
+            <div class="flex items-center gap-2">
+              <svg
+                class="w-5 h-5 text-teal-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Atendimento rápido
+            </div>
+            <div class="flex items-center gap-2">
+              <svg
+                class="w-5 h-5 text-teal-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              4.9/5 Avaliação dos Pacientes
+            </div>
+            <div class="flex items-center gap-2">
+              <svg
+                class="w-5 h-5 text-teal-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Satisfação Garantida
+            </div>
+          </div>
+
+          <!-- Nota explicativa -->
+          <p class="mt-8 text-xs text-teal-200/80 max-w-xl mx-auto">
+            *Desconto válido apenas para a primeira consulta. Não cumulativo com
+            outras promoções.
+          </p>
+        </div>
+      </section>
+      <!-- CTA SECTION 4 END -->
 
       <div class="bg-white">
         <!-- Doctor Profile -->

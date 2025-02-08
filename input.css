@@ -42,14 +42,20 @@ body {
 }
 
 .baqu {
-  background-color: rgba(200, 222, 225, 1);
+  /* background-color: rgba(200, 222, 225, 1);
 
   background-image: linear-gradient(
       90deg,
       rgba(200, 222, 225, 0.7),
       rgba(218, 233, 235, 0.7)
     ),
-    url("./src/img/gplay.png");
+    url("./src/img/gplay.png"); */
+  background-image: radial-gradient(
+    rgba(174, 189, 255, 0.3) 2px,
+    transparent 2px
+  );
+  background-size: 40px 40px;
+  background-color: #c8dee1;
 }
 
 .testes {
@@ -108,13 +114,19 @@ body {
     98% 49.21%,
     100% 54.18%
   );
-  background-color: rgba(200, 222, 225, 1);
+  /* background-color: rgba(200, 222, 225, 1);
   background-image: linear-gradient(
       90deg,
       rgba(200, 222, 225, 0.7),
       rgba(218, 233, 235, 0.7)
     ),
-    url("./src/img/gplay.png");
+    url("./src/img/gplay.png"); */
+  background-image: radial-gradient(
+    rgba(174, 189, 255, 0.3) 2px,
+    transparent 2px
+  );
+  background-size: 40px 40px;
+  background-color: #c8dee1;
 }
 
 .bacq:after {
@@ -199,6 +211,11 @@ a.rounded {
   );
   background-size: 200%;
   transition: all 0.4s ease;
+}
+
+a.rounded-lg.white {
+  background: linear-gradient(135deg, #fff, #cbe7ea, #fff);
+  background-size: 200%;
 }
 
 a.rounded-lg:hover,

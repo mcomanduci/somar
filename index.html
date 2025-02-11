@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -18,7 +18,7 @@
       href="./src/img/favicon.png"
       type="image/x-icon"
     />
-    <script defer src="./script/script.js"></script>
+    <script defer type="module" src="./script/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,7 +30,7 @@
   </head>
   <body class="font-poppins antialiased">
     <!-- HEADER SECTION -->
-    <header class="fixed w-full transition-all duration-300 z-50">
+    <header class="absolute w-full transition-all duration-300 z-50">
       <div
         class="container mx-auto px-4 py-3 flex items-center justify-between"
       >
@@ -52,7 +52,7 @@
         </a>
 
         <!-- Menu Mobile -->
-        <button
+        <!-- <button
           class="md:hidden flex items-center p-2 rounded-lg hover:bg-gray-100"
           aria-label="Menu"
           aria-expanded="false"
@@ -71,32 +71,33 @@
               d="M4 6h16M4 12h16m-7 6h7"
             />
           </svg>
-        </button>
+        </button> -->
 
         <!-- Navigation Desktop -->
         <nav class="hidden md:block">
           <ul class="flex items-center gap-8">
-            <li>
-              <a
-                href="#sobre"
-                class="text-gray-600 hover:text-primary transition-colors"
-                >Sobre</a
-              >
-            </li>
-            <li>
+            <!-- <li>
               <a
                 href="#servicos"
-                class="text-gray-600 hover:text-primary transition-colors"
+                class="text-[#ddd] hover:text-white transition-colors"
                 >Serviços</a
               >
             </li>
             <li>
               <a
-                href="#contato"
-                class="text-gray-600 hover:text-primary transition-colors"
-                >Contato</a
+                href="#sobre"
+                class="text-[#ddd] hover:text-white transition-colors"
+                >Sobre</a
               >
             </li>
+
+            <li>
+              <a
+                href="#contato"
+                class="text-[#ddd] hover:text-white transition-colors"
+                >Contato</a
+              >
+            </li> -->
             <li>
               <a
                 href="#agendar"
@@ -200,14 +201,14 @@
           </div>
         </div>
         <div
-          class="testes hidden lg:block h-[150px] z-40 absolute bottom-0 left-0 right-0"
+          class="wave hidden lg:block h-[150px] z-40 absolute bottom-0 left-0 right-0"
         ></div>
       </section>
       <!-- HERO SECTION -->
 
       <!-- VIDEO SECTION -->
       <section
-        class="py-16 relative bg-[#c8dee1] bg-[radial-gradient(rgba(174,189,255,0.3)_2px,transparent_2px)] [background-size:40px_40px]"
+        class="py-16 relative blue-bg"
         aria-labelledby="video-heading"
         aria-describedby="video-description"
       >
@@ -285,13 +286,17 @@
       <!-- END VIDEO SECTION -->
 
       <!-- SERVICES SECTION -->
-      <section class="py-16 relative bacqa" aria-labelledby="services-heading">
+      <section
+        class="py-16 relative bacqa"
+        aria-labelledby="services-heading"
+        id="servicos"
+      >
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
           <!-- Section Header -->
           <header class="text-center mb-16 space-y-4">
             <div class="inline-flex flex-col items-center">
               <span
-                class="text-primary text-sm font-semibold tracking-wider uppercase mb-2"
+                class="text-primary inline-block text-sm font-semibold tracking-wider uppercase mb-2 border-2 border-primary rounded-full px-2 py-1 bg-white"
                 >Nossos Serviços</span
               >
               <h2
@@ -1100,7 +1105,7 @@
       <!-- END SERVICES SECTION -->
 
       <!-- ABOUT SECTION -->
-      <section class="" aria-labelledby="about-heading">
+      <section class="" aria-labelledby="about-heading" id="sobre">
         <!-- Doctor Section -->
         <div class="relative">
           <div
@@ -1120,9 +1125,7 @@
             </div>
 
             <!-- Content Column -->
-            <div
-              class="relative bg-[#c8dee1] bg-[radial-gradient(rgba(174,189,255,0.3)_2px,transparent_2px)] [background-size:40px_40px] p-8 lg:p-20 h-full"
-            >
+            <div class="relative blue-bg p-8 lg:p-20 h-full">
               <div class="max-w-xl">
                 <span
                   class="text-primary text-sm font-semibold tracking-wider uppercase mb-2 block"
@@ -1238,7 +1241,9 @@
             class="grid md:grid-cols-2 items-start md:max-h-[700px] overflow-hidden"
           >
             <!-- Content Column -->
-            <div class="relative bacqa p-8 lg:p-20 h-full order-2 md:order-1">
+            <div
+              class="relative bg-white p-8 lg:p-20 h-full order-2 md:order-1"
+            >
               <div class="max-w-xl">
                 <span
                   class="text-primary text-sm font-semibold tracking-wider uppercase mb-2 block"
@@ -1364,40 +1369,47 @@
       <!-- END ABOUT SECTION -->
 
       <!-- PROCESS SECTION -->
-      <section class="py-16 bg-gray-50" aria-labelledby="process-heading">
+      <section class="py-16 blue-bg" aria-labelledby="process-heading">
         <div class="container max-w-screen-xl px-4 mx-auto">
-          <div class="text-center mb-12">
+          <!-- Section Header -->
+          <header class="text-center mb-12">
+            <span
+              class="text-primary inline-block text-sm font-semibold tracking-wider uppercase mb-2 border-2 border-primary rounded-full px-2 py-1 bg-white"
+              >Como Funciona</span
+            >
             <h2
               id="process-heading"
-              class="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+              class="text-3xl md:text-4xl font-bold text-secondary mb-4"
             >
               Nosso Processo de Atendimento
             </h2>
-            <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+            <p class="text-gray-600 max-w-2xl mx-auto text-base">
               Cuidado integral desde o primeiro contato até o acompanhamento
               pós-consulta
             </p>
-          </div>
+          </header>
 
-          <div class="grid md:grid-cols-3 gap-8 relative">
-            <!-- Decorative line -->
+          <div
+            class="grid md:grid-cols-3 gap-6 relative max-w-screen-xl mx-auto"
+          >
+            <!-- Decorative Lines -->
             <div
-              class="hidden md:block absolute inset-x-0 top-1/2 h-1 bg-teal-200 -translate-y-1/2"
+              class="hidden md:block absolute inset-x-0 top-[45%] h-0.5 bg-gradient-to-r from-teal-100 via-teal-200 to-teal-100"
             ></div>
             <div
-              class="block md:hidden absolute inset-y-0 left-1/2 w-1 bg-teal-200 -translate-x-1/2"
+              class="block md:hidden absolute inset-y-0 left-[45%] w-0.5 bg-gradient-to-b from-teal-100 via-teal-200 to-teal-100"
             ></div>
 
             <!-- Step 1 -->
             <div class="relative group">
               <div
-                class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 h-full"
+                class="bg-white rounded-lg shadow hover:shadow-md transition-all duration-300 h-full p-6"
               >
                 <div
-                  class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-6 -mt-14"
+                  class="w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4 -mt-10 shadow-md"
                 >
                   <svg
-                    class="w-8 h-8 text-white"
+                    class="w-6 h-6 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -1410,26 +1422,32 @@
                     />
                   </svg>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-4">
-                  Agendamento
-                </h3>
-                <p class="text-gray-600">
-                  Entre em contato por telefone, WhatsApp ou nosso portal online
-                  para marcar sua consulta.
-                </p>
+                <div class="text-center">
+                  <span
+                    class="text-primary text-sm font-semibold tracking-wider uppercase mb-2 block"
+                    >Etapa 1</span
+                  >
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">
+                    Agendamento
+                  </h3>
+                  <p class="text-gray-600 text-sm">
+                    Entre em contato por telefone, WhatsApp ou nosso portal
+                    online para marcar sua consulta.
+                  </p>
+                </div>
               </div>
             </div>
 
             <!-- Step 2 -->
             <div class="relative group mt-8 md:mt-0">
               <div
-                class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 h-full"
+                class="bg-white rounded-lg shadow hover:shadow-md transition-all duration-300 h-full p-6"
               >
                 <div
-                  class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-6 -mt-14"
+                  class="w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4 -mt-10 shadow-md"
                 >
                   <svg
-                    class="w-8 h-8 text-white"
+                    class="w-6 h-6 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -1442,26 +1460,30 @@
                     />
                   </svg>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-4">
-                  Consulta
-                </h3>
-                <p class="text-gray-600">
-                  Atendimento personalizado com especialista, exames no local e
-                  orientações claras.
-                </p>
+                <div class="text-center">
+                  <span
+                    class="text-primary text-sm font-semibold tracking-wider uppercase mb-2 block"
+                    >Etapa 2</span
+                  >
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">Consulta</h3>
+                  <p class="text-gray-600 text-sm">
+                    Atendimento personalizado com especialista, exames no local
+                    e orientações claras.
+                  </p>
+                </div>
               </div>
             </div>
 
             <!-- Step 3 -->
             <div class="relative group mt-8 md:mt-0">
               <div
-                class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 h-full"
+                class="bg-white rounded-lg shadow hover:shadow-md transition-all duration-300 h-full p-6"
               >
                 <div
-                  class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-6 -mt-14"
+                  class="w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4 -mt-10 shadow-md"
                 >
                   <svg
-                    class="w-8 h-8 text-white"
+                    class="w-6 h-6 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -1474,69 +1496,70 @@
                     />
                   </svg>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-4">
-                  Acompanhamento
-                </h3>
-                <p class="text-gray-600">
-                  Retorno programado e suporte contínuo através de nosso portal
-                  do paciente.
-                </p>
+                <div class="text-center">
+                  <span
+                    class="text-primary text-sm font-semibold tracking-wider uppercase mb-2 block"
+                    >Etapa 3</span
+                  >
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">
+                    Acompanhamento
+                  </h3>
+                  <p class="text-gray-600 text-sm">
+                    Retorno programado e suporte contínuo através de nosso
+                    portal do paciente.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- PROCESS SECTION END -->
+      <!-- END PROCESS SECTION -->
 
-      <!-- CTA SECTION 4 -->
+      <!-- CTA SECTION -->
       <section
-        class="relative bg-[url('./src/img/outside.webp')] bg-cover bg-center bg-no-repeat py-16 lg:py-16 overflow-hidden"
+        class="relative bg-[url('./src/img/outside.webp')] bg-cover bg-center bg-fixed bg-no-repeat py-16 overflow-hidden"
       >
-        <!-- Overlay com gradiente para melhor legibilidade -->
+        <!-- Improved overlay with multiple layers -->
         <div
-          class="absolute inset-0 bg-gradient-to-t from-teal-900/90 to-teal-800/70"
+          class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30"
         ></div>
 
         <div class="relative container mx-auto px-4 text-center">
-          <!-- Badge de desconto -->
+          <!-- Enhanced discount badge -->
           <div
-            class="inline-flex items-center bg-gradient-to-r from-teal-500 to-teal-600 text-white px-6 py-2 rounded-full mb-6 shadow-lg"
+            class="inline-flex items-center bg-gradient-to-r from-teal-500 to-teal-600 text-white px-6 py-2 rounded-full mb-6 shadow-lg transform hover:scale-105 transition-transform duration-300"
           >
-            <svg
-              class="w-5 h-5 mr-2"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+            <span class="font-semibold uppercase tracking-wider text-sm"
+              >Desconto Exclusivo</span
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M13 7h2m0 0v2m0-2V4.5A2.5 2.5 0 109.5 7H11m2 0h-2m0 0V9m0-2v2.5A2.5 2.5 0 0013.5 14H15m-2 0h2m0 0v2m0-2v2.5a2.5 2.5 0 11-5 0V14H9m2 0h2"
-              />
-            </svg>
-            <span class="font-semibold uppercase">Desconto Exclusivo</span>
           </div>
 
-          <!-- Título principal -->
-          <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
-            <span class="block text-teal-300">Sua Saúde Não Pode Esperar</span>
-            <span class="">1ª Consulta com 10% de Desconto</span>
+          <!-- Enhanced typography -->
+          <h2
+            class="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight"
+          >
+            <span class="block text-teal-300 mb-2"
+              >Sua Saúde Não Pode Esperar</span
+            >
+            <span
+              class="bg-gradient-to-r from-white to-white/90 bg-clip-text text-transparent"
+              >1ª Consulta com 10% de Desconto</span
+            >
           </h2>
 
-          <!-- Subtítulo -->
           <p
-            class="text-lg md:text-xl text-teal-100 max-w-2xl mx-auto mb-8 leading-relaxed"
+            class="text-lg md:text-xl text-teal-100/90 max-w-2xl mx-auto mb-10 leading-relaxed"
           >
             Mencione essa oferta ao agendar a sua consulta e garanta o desconto
             de 10% para a primeira consulta.
           </p>
 
-          <!-- CTA Principal -->
-          <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+          <!-- Enhanced CTA button -->
+          <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
             <a
               href="#book"
-              class="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-white/50 text-tertiary text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform white"
+              class="group inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-teal-50 text-white text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <svg
                 class="w-6 h-6 mr-3"
@@ -1551,13 +1574,13 @@
                   d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                 />
               </svg>
-              Agendar com Desconto
+              <span class="relative"> Agendar com Desconto </span>
             </a>
           </div>
 
-          <!-- Selos de Confiança -->
+          <!-- Enhanced trust indicators -->
           <div
-            class="flex flex-wrap justify-center gap-6 text-sm text-teal-100"
+            class="flex flex-wrap justify-center gap-6 text-sm text-teal-100 mb-8"
           >
             <div class="flex items-center gap-2">
               <svg
@@ -1601,14 +1624,732 @@
             </div>
           </div>
 
-          <!-- Nota explicativa -->
-          <p class="mt-8 text-xs text-teal-200/80 max-w-xl mx-auto">
+          <!-- Enhanced disclaimer -->
+          <p
+            class="mt-8 text-xs text-teal-200/80 max-w-xl mx-auto backdrop-blur-sm py-2"
+          >
             *Desconto válido apenas para a primeira consulta. Não cumulativo com
             outras promoções.
           </p>
         </div>
       </section>
-      <!-- CTA SECTION 4 END -->
+      <!-- CTA SECTION END -->
+
+      <!-- TESTIMONIALS SECTION -->
+      <section
+        class="py-16 bg-white relative"
+        aria-labelledby="testimonials-heading"
+      >
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          <!-- Section Header -->
+          <div class="text-center mb-12">
+            <span
+              class="text-primary text-sm font-semibold tracking-wider uppercase mb-2 block"
+              >Depoimentos</span
+            >
+            <h2
+              id="testimonials-heading"
+              class="text-3xl font-bold text-secondary md:text-4xl"
+            >
+              O que Nossos Pacientes Têm a Dizer
+            </h2>
+            <div class="h-1 w-20 bg-primary/60 rounded-full mx-auto mt-4"></div>
+          </div>
+
+          <!-- Testimonials Slider -->
+          <div class="mt-8">
+            <div id="keen-slider" class="keen-slider">
+              <!-- Testimonial Card -->
+              <div class="keen-slider__slide">
+                <blockquote
+                  class="h-full rounded-xl green-bg p-6 transition-all duration-300 border border-green-700/10"
+                >
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="https://plus.unsplash.com/premium_photo-1731499365276-5e613510e8f6?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt="Foto do paciente"
+                      class="h-12 w-12 rounded-full object-cover"
+                      loading="lazy"
+                    />
+
+                    <div>
+                      <p class="mt-1 text-lg font-medium text-white">
+                        Carla Souza
+                      </p>
+                      <div class="flex gap-0.5 text-amber-400">
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="mt-4 text-[#f5f5f5] leading-relaxed">
+                    "Excelente atendimento na Clínica Somar. A Dra. Jéssica é
+                    muito atenciosa e profissional. O ambiente é acolhedor e a
+                    equipe muito preparada. Recomendo!"
+                  </p>
+                </blockquote>
+              </div>
+
+              <div class="keen-slider__slide">
+                <blockquote
+                  class="h-full rounded-xl green-bg p-6 transition-all duration-300 border border-green-700"
+                >
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                      alt="Foto do paciente"
+                      class="h-12 w-12 rounded-full object-cover"
+                      loading="lazy"
+                    />
+
+                    <div>
+                      <div class="flex gap-0.5 text-amber-400">
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+
+                      <p class="mt-1 text-lg font-medium text-white">
+                        Renato Silva
+                      </p>
+                    </div>
+                  </div>
+
+                  <p class="mt-4 text-[#f5f5f5] leading-relaxed">
+                    "Excelente atendimento na Clínica Somar. A Dra. Jéssica é
+                    muito atenciosa e profissional. O ambiente é acolhedor e a
+                    equipe muito preparada. Recomendo!"
+                  </p>
+                </blockquote>
+              </div>
+
+              <div class="keen-slider__slide">
+                <blockquote
+                  class="h-full rounded-xl green-bg p-6 transition-all duration-300 border border-green-700"
+                >
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt="Foto do paciente"
+                      class="h-12 w-12 rounded-full object-cover"
+                      loading="lazy"
+                    />
+
+                    <div>
+                      <div class="flex gap-0.5 text-amber-400">
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+
+                      <p class="mt-1 text-lg font-medium text-white">
+                        Ana Silva
+                      </p>
+                    </div>
+                  </div>
+
+                  <p class="mt-4 text-[#f5f5f5] leading-relaxed">
+                    "Excelente atendimento na Clínica Somar. A Dra. Jéssica é
+                    muito atenciosa e profissional. O ambiente é acolhedor e a
+                    equipe muito preparada. Recomendo!"
+                  </p>
+                </blockquote>
+              </div>
+
+              <div class="keen-slider__slide">
+                <blockquote
+                  class="h-full rounded-xl green-bg p-6 transition-all duration-300 border border-green-700"
+                >
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt="Foto do paciente"
+                      class="h-12 w-12 rounded-full object-cover"
+                      loading="lazy"
+                    />
+
+                    <div>
+                      <div class="flex gap-0.5 text-amber-400">
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+
+                      <p class="mt-1 text-lg font-medium text-white">
+                        Paulo Gomes
+                      </p>
+                    </div>
+                  </div>
+
+                  <p class="mt-4 text-[#f5f5f5] leading-relaxed">
+                    "Excelente atendimento na Clínica Somar. A Dra. Jéssica é
+                    muito atenciosa e profissional. O ambiente é acolhedor e a
+                    equipe muito preparada. Recomendo!"
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Navigation Controls -->
+            <div class="mt-8 flex items-center justify-center gap-6">
+              <button
+                id="keen-slider-previous"
+                class="rounded-full p-3 text-gray-600 transition hover:bg-gray-100 hover:text-gray-700 cursor-pointer"
+                aria-label="Ver depoimento anterior"
+              >
+                <svg
+                  class="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+
+              <div
+                class="flex items-center gap-2 text-sm font-medium text-gray-500"
+              >
+                <span id="keen-slider-active" class="text-secondary"></span>
+                <span>/</span>
+                <span id="keen-slider-count" class="text-secondary"></span>
+              </div>
+
+              <button
+                id="keen-slider-next"
+                class="rounded-full p-3 text-gray-600 transition hover:bg-gray-100 hover:text-gray-700 cursor-pointer"
+                aria-label="Ver próximo depoimento"
+              >
+                <svg
+                  class="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- TESTIMONIALS SECTION END -->
+
+      <!-- CONTACT SECTION -->
+      <section
+        id="contato"
+        class="relative blue-bg"
+        aria-labelledby="contact-heading"
+        id="contato"
+      >
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <!-- Section Header -->
+          <div class="text-center mb-12">
+            <span
+              class="text-primary text-sm font-semibold tracking-wider uppercase mb-2 block"
+              >Entre em Contato</span
+            >
+            <h2
+              id="contact-heading"
+              class="text-3xl font-bold text-secondary md:text-4xl mb-4"
+            >
+              Estamos Aqui para Ajudar
+            </h2>
+            <div class="h-1 w-20 bg-primary/60 rounded-full mx-auto mt-4"></div>
+          </div>
+
+          <!-- Contact Grid -->
+          <div class="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <!-- Contact Info -->
+            <div class="grid grid-cols-2 gap-4 auto-rows-min content-start">
+              <!-- Phone -->
+              <div
+                class="bg-white p-6 rounded-lg shadow-sm border border-gray-100"
+              >
+                <div class="flex flex-col items-center text-center">
+                  <div
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mb-3"
+                  >
+                    <svg
+                      class="w-5 h-5 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="font-semibold text-gray-900 mb-2">Telefone</h3>
+                  <a
+                    href="tel:+553199999999"
+                    class="text-primary hover:underline"
+                  >
+                    (31) 9999-9999
+                  </a>
+                </div>
+              </div>
+
+              <!-- WhatsApp -->
+              <div
+                class="bg-white p-6 rounded-lg shadow-sm border border-gray-100"
+              >
+                <div class="flex flex-col items-center text-center">
+                  <div
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mb-3"
+                  >
+                    <svg
+                      class="w-5 h-5 text-primary"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="font-semibold text-gray-900 mb-2">WhatsApp</h3>
+                  <a
+                    href="https://wa.me/553199999999"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary hover:underline"
+                  >
+                    (31) 9999-9999
+                  </a>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div
+                class="bg-white p-6 rounded-lg shadow-sm border border-gray-100"
+              >
+                <div class="flex flex-col items-center text-center">
+                  <div
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mb-3"
+                  >
+                    <svg
+                      class="w-5 h-5 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="font-semibold text-gray-900 mb-2">E-mail</h3>
+                  <a
+                    href="mailto:contato@clinicasomar.com"
+                    class="text-primary hover:underline"
+                  >
+                    contato@clinicasomar.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Hours -->
+              <div
+                class="bg-white p-6 rounded-lg shadow-sm border border-gray-100"
+              >
+                <div class="flex flex-col items-center text-center">
+                  <div
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mb-3"
+                  >
+                    <svg
+                      class="w-5 h-5 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="font-semibold text-gray-900 mb-2">Horário</h3>
+                  <p class="text-gray-600">
+                    Seg-Sex: 8h às 18h<br />
+                    Sáb: 8h às 12h
+                  </p>
+                </div>
+              </div>
+
+              <!-- Address - Full Width -->
+              <div
+                class="col-span-2 bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center"
+              >
+                <div class="flex flex-col items-center">
+                  <div
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mb-3"
+                  >
+                    <svg
+                      class="w-5 h-5 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="font-semibold text-gray-900 mb-2">Endereço</h3>
+                  <p class="text-gray-600">
+                    Rua Example, 123 - Centro<br />
+                    Betim, MG - CEP: 32600-000
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map -->
+            <div
+              class="h-[400px] lg:h-full rounded-lg overflow-hidden shadow-md"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.9043741996224!2d-44.19984492374967!3d-19.932799939585744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6c7f82a8367b7%3A0x6197f1bedbc6d926!2sBetim%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1707649444719!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localização da Clínica Somar"
+                class="w-full h-full"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT SECTION END -->
     </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-secondary text-white" aria-labelledby="footer-heading">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Main Footer Content -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <!-- Brand Column -->
+          <div class="text-center md:text-left">
+            <img
+              src="./src/img/logos/logo2-white.png"
+              alt="Clínica Somar Logo"
+              class="h-12 w-auto mx-auto md:mx-0 mb-4"
+              loading="lazy"
+            />
+            <p class="text-[#f5f5f5] text-sm max-w-[300px] mx-auto">
+              Cuidando da sua saúde com tecnologia avançada e atendimento
+              humanizado.
+            </p>
+          </div>
+
+          <!-- Contact Column -->
+          <div
+            class="flex justify-center text-center md:text-left md:col-span-2"
+          >
+            <div>
+              <h3 class="text-xl font-semibold mb-4 text-white">Contato</h3>
+              <ul class="space-y-2 text-[#f5f5f5] text-sm">
+                <li
+                  class="flex items-center justify-center md:justify-start gap-2"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                  </svg>
+                  <span>Rua Example, 123 - Centro, Betim/MG</span>
+                </li>
+                <li
+                  class="flex items-center justify-center md:justify-start gap-2"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                  <span>(31) 9999-9999</span>
+                </li>
+                <li
+                  class="flex items-center justify-center md:justify-start gap-2"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <span>contato@clinicasomar.com</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Social Column -->
+          <div class="text-center md:text-left">
+            <h3 class="text-lg font-semibold mb-4 text-white">Redes Sociais</h3>
+            <div class="flex justify-center md:justify-start space-x-4">
+              <a
+                href="#"
+                class="text-[#f5f5f5] hover:text-blue-200 transition-colors"
+                aria-label="Facebook"
+              >
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-[#f5f5f5] hover:text-pink-300 transition-colors"
+                aria-label="Instagram"
+              >
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-sky-50 pt-8">
+          <div class="text-center">
+            <p class="text-gray-400 text-sm">
+              © 2024 <a href="#" class="hover:text-white">Clínica Somar</a>.
+              Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
   </body>
 </html>

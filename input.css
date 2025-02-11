@@ -7,19 +7,87 @@
   --color-texto: #4f4f4f;
   --color-subtitle: #999;
   --color-subtitle: #727272;
+  --font-poppins: "Poppins", sans-serif;
   --font-roboto: "Roboto", sans-serif;
+  --background-customGradient: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 109, 119, 0.8),
+    rgba(0, 109, 119, 1)
+  );
 }
 
-h1 {
-  @apply text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-secondary;
-}
-
-h2 {
+/* h2 {
   @apply text-3xl lg:text-4xl xl:text-5xl font-bold leading-snug;
 }
 
 h3 {
   @apply text-xl lg:text-2xl xl:text-3xl font-bold leading-snug;
+} */
+
+.service-card {
+  @apply relative h-full w-full rounded-xl [perspective:1000px] min-h-[480px];
+}
+
+.service-card-inner {
+  @apply relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d];
+}
+
+.front-card {
+  @apply absolute inset-0 rounded-xl bg-primary shadow-lg [backface-visibility:hidden];
+}
+
+.front-card-inner {
+  @apply relative h-full overflow-hidden rounded-xl shadow-lg transition-shadow duration-300 group-hover:shadow-2xl;
+}
+
+.front-card-bg {
+  @apply absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.1),rgba(0,0,0,0.2),rgba(0,109,119,0.8),rgba(0,109,119,1))];
+}
+
+.front-card-content {
+  @apply absolute bottom-0 left-0 right-0 p-6 text-white flex flex-col;
+}
+
+.card-content-h3 {
+  @apply text-2xl font-semibold mb-4 drop-shadow-md;
+}
+
+.front-card-content-ul {
+  @apply space-y-3 mb-6;
+}
+
+.front-card-content-li {
+  @apply flex items-center;
+}
+
+.front-card-content-button {
+  @apply inline-flex items-center font-medium text-teal-200 hover:text-white transition-colors self-center;
+}
+
+.back-card {
+  @apply absolute inset-0 rounded-xl bg-primary p-6 text-white [backface-visibility:hidden] [transform:rotateY(180deg)];
+}
+
+.back-card-inner {
+  @apply flex h-full flex-col justify-between;
+}
+
+.back-card-content {
+  @apply flex h-full flex-col justify-between;
+}
+
+.back-card-h3 {
+  @apply text-2xl font-semibold text-center;
+}
+
+.back-card-p {
+  @apply text-base text-[#ddd] px-4;
+}
+
+.card-button {
+  @apply inline-flex items-center justify-center w-full py-3 font-medium border-2 bg-white/10 border-white/20 rounded-lg hover:bg-white/20 transition-colors;
 }
 
 :root {
@@ -31,31 +99,6 @@ h3 {
   --color-text: #4f4f4f;
   --color-subtitle: #999;
   --color-subtitle: #727272;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-.roboto {
-  font-family: "Roboto", sans-serif;
-}
-
-.baqu {
-  /* background-color: rgba(200, 222, 225, 1);
-
-  background-image: linear-gradient(
-      90deg,
-      rgba(200, 222, 225, 0.7),
-      rgba(218, 233, 235, 0.7)
-    ),
-    url("./src/img/gplay.png"); */
-  background-image: radial-gradient(
-    rgba(174, 189, 255, 0.3) 2px,
-    transparent 2px
-  );
-  background-size: 40px 40px;
-  background-color: #c8dee1;
 }
 
 .testes {

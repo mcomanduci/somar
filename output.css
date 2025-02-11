@@ -682,6 +682,9 @@
   .order-2 {
     order: 2;
   }
+  .col-span-1 {
+    grid-column: span 1 / span 1;
+  }
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -913,14 +916,14 @@
   .h-40 {
     height: calc(var(--spacing) * 40);
   }
-  .h-\[3px\] {
-    height: 3px;
-  }
   .h-\[150px\] {
     height: 150px;
   }
   .h-\[300px\] {
     height: 300px;
+  }
+  .h-\[3px\] {
+    height: 3px;
   }
   .h-\[400px\] {
     height: 400px;
@@ -1424,9 +1427,6 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-white\/50 {
-    background-color: color-mix(in oklab, var(--color-white) 50%, transparent);
-  }
   .bg-white\/90 {
     background-color: color-mix(in oklab, var(--color-white) 90%, transparent);
   }
@@ -1806,17 +1806,8 @@
   .text-\[\#009689\] {
     color: #009689;
   }
-  .text-\[\#\] {
-    color: #;
-  }
-  .text-\[\#ccc\] {
-    color: #ccc;
-  }
   .text-\[\#ddd\] {
     color: #ddd;
-  }
-  .text-\[\#eee\] {
-    color: #eee;
   }
   .text-\[\#f5f5f5\] {
     color: #f5f5f5;
@@ -2506,6 +2497,11 @@
   .md\:order-2 {
     @media (width >= 48rem) {
       order: 2;
+    }
+  }
+  .md\:col-span-1 {
+    @media (width >= 48rem) {
+      grid-column: span 1 / span 1;
     }
   }
   .md\:col-span-2 {

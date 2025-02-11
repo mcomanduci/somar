@@ -40,20 +40,24 @@ export default function keenSliderInit() {
         },
       },
       created(slider) {
+        // First, add opacity to all slides
+        slider.slides.forEach((slide) => slide.classList.add("opacity-40"));
+        // Then remove it from the active slide
         slider.slides[slider.track.details.rel].classList.remove("opacity-40");
 
         keenSliderActive.innerText = slider.track.details.rel + 1;
         keenSliderCount.innerText = slider.slides.length;
       },
       slideChanged(slider) {
+        // Add opacity to all slides
         slider.slides.forEach((slide) => slide.classList.add("opacity-40"));
-
+        // Remove opacity from the active slide
         slider.slides[slider.track.details.rel].classList.remove("opacity-40");
 
         keenSliderActive.innerText = slider.track.details.rel + 1;
       },
     },
-    [],
+    []
   );
 
   const keenSliderPrevious = document.getElementById("keen-slider-previous");

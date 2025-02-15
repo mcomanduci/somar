@@ -41,10 +41,10 @@
           aria-label="Clínica Somar - Página inicial"
         >
           <img
-            src="src/img/logos/logo2.png"
+            src="src/img/logos/teste.png"
             alt="Logo Clínica Somar"
             loading="eager"
-            class="h-12 md:h-16 w-auto transition-all duration-300 hover:opacity-90"
+            class="h-12 md:h-10 w-auto transition-all duration-300 hover:opacity-90"
             fetchpriority="high"
             width="160"
             height="64"
@@ -165,9 +165,19 @@
     <main>
       <!-- HERO SECTION -->
       <section
-        class="relative hero-bg py-20 px-4 md:px-0 md:py-0 min-h-full md:h-screen"
+        class="relative hero-bg py-20 px-4 md:px-0 md:py-0 min-h-full md:h-screen bg-cover bg-[center_20%] bg-no-repeat h-screen w-full overflow-hidden"
         aria-labelledby="hero-heading"
         aria-describedby="hero-description"
+        style="
+          background-image:
+            linear-gradient(
+              90deg,
+              rgba(255, 255, 255, 0.5) 0%,
+              rgba(0, 0, 0, 0.2) 50%,
+              rgba(0, 0, 0, 0.4) 100%
+            ),
+            url(&quot;./src/img/image.webp&quot;);
+        "
       >
         <div
           class="container h-full mx-auto md:min-h-[80vh] flex items-center lg:pl-8"
@@ -266,7 +276,7 @@
 
           <div class="flex flex-col pt-12 sm:flex-row gap-4 justify-center">
             <a
-              href="/agendamento"
+              href="#"
               class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-primary rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"
               role="button"
               aria-label="Agendar consulta na Clínica Somar"
@@ -287,7 +297,7 @@
 
       <!-- SERVICES SECTION -->
       <section
-        class="py-16 relative bacqa"
+        class="py-16 relative bg-white"
         aria-labelledby="services-heading"
         id="servicos"
       >
@@ -2245,7 +2255,7 @@
               class="h-12 w-auto mx-auto md:mx-0 mb-4"
               loading="lazy"
             />
-            <p class="text-[#f5f5f5] text-sm max-w-[300px] mx-auto">
+            <p class="text-[#f5f5f5] text-sm max-w-[250px] mx-auto md:mx-0">
               Cuidando da sua saúde com tecnologia avançada e atendimento
               humanizado.
             </p>
